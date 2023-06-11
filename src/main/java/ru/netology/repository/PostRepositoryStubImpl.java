@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
 public class PostRepositoryStubImpl implements PostRepository {
-  private final AtomicLong idPost = new AtomicLong();
+    private final AtomicLong idPost = new AtomicLong();
     private final Map<Long, Post> postMap = new ConcurrentHashMap<>();
 
     public List<Post> all() {
